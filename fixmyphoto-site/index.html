@@ -30,20 +30,19 @@
 
     nav {
       background-color: var(--header-bg);
+      color: white;
+      padding: 1rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 1rem 2rem;
       position: sticky;
       top: 0;
       z-index: 1000;
     }
 
     nav .logo {
-      color: white;
       font-size: 1.5rem;
       font-weight: bold;
-      text-transform: uppercase;
     }
 
     nav ul {
@@ -51,28 +50,25 @@
       display: flex;
       gap: 1.5rem;
       margin: 0;
-    }
-
-    nav ul li {
-      display: inline;
+      padding: 0;
     }
 
     nav ul li a {
       color: white;
       text-decoration: none;
-      font-weight: 500;
-      padding: 0.5rem 0;
-      transition: color 0.3s ease;
+      font-size: 1rem;
+      transition: color 0.3s, border-bottom 0.3s;
     }
 
     nav ul li a:hover {
       color: var(--primary-color);
+      border-bottom: 2px solid var(--primary-color);
     }
 
     header {
       background-color: var(--header-bg);
       color: white;
-      padding: 4rem 2rem 3rem;
+      padding: 4rem 2rem;
       text-align: center;
     }
 
@@ -199,7 +195,7 @@
     <div class="logo">Fix My Photo</div>
     <ul>
       <li><a href="#">Home</a></li>
-      <li><a href="#what">What We Do</a></li>
+      <li><a href="#services">What We Do</a></li>
       <li><a href="#how">How It Works</a></li>
       <li><a href="#examples">Examples</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -212,7 +208,7 @@
     <a href="#contact" class="cta-button">Get a Free Quote</a>
   </header>
 
-  <section class="section" id="what">
+  <section class="section" id="services">
     <h2>What We Do</h2>
     <p>We help you fix and improve your photos without the hassle of complicated apps or software. Just send your photo, tell us what you want fixed, and we'll handle the rest.</p>
   </section>
