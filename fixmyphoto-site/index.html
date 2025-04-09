@@ -266,16 +266,20 @@
   </section>
 
   <section class="section" id="contact">
-    <h2>Contact Us</h2>
-    <p>Want to try it free or ask a question? Fill out the form below:</p>
-    <form action="https://formspree.io/f/mexample" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Tell us what you’d like done..." required></textarea>
-      <button type="submit">Send Request</button>
-    </form>
-  </section>
-
+  <h2>Contact Us</h2>
+  <p>Want to try it free or ask a question? Fill out the form below:</p>
+  <form action="https://formspree.io/f/mexample" method="POST" enctype="multipart/form-data">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Tell us what you’d like done..." required></textarea>
+    
+    <!-- Added file upload input -->
+    <input type="file" name="file" accept="image/*" required>
+    
+    <button type="submit">Send Request</button>
+  </form>
+</section>
+  
   <footer>
     &copy; 2025 Fix My Photo — Simple Photo Editing for Everyone
   </footer>
