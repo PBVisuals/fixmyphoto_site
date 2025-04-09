@@ -28,10 +28,51 @@
       line-height: 1.6;
     }
 
+    nav {
+      background-color: var(--header-bg);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav .logo {
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem 0;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: var(--primary-color);
+    }
+
     header {
       background-color: var(--header-bg);
       color: white;
-      padding: 4rem 2rem;
+      padding: 4rem 2rem 3rem;
       text-align: center;
     }
 
@@ -154,18 +195,29 @@
   </style>
 </head>
 <body>
+  <nav>
+    <div class="logo">Fix My Photo</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#what">What We Do</a></li>
+      <li><a href="#how">How It Works</a></li>
+      <li><a href="#examples">Examples</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
   <header>
     <h1>Fix My Photo</h1>
     <p>Simple photo editing help for everyone</p>
     <a href="#contact" class="cta-button">Get a Free Quote</a>
   </header>
 
-  <section class="section">
+  <section class="section" id="what">
     <h2>What We Do</h2>
     <p>We help you fix and improve your photos without the hassle of complicated apps or software. Just send your photo, tell us what you want fixed, and we'll handle the rest.</p>
   </section>
 
-  <section class="section">
+  <section class="section" id="how">
     <h2>How It Works</h2>
     <div class="how-it-works">
       <div class="step">
@@ -183,7 +235,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="examples">
     <h2>Example Edits</h2>
     <div class="examples">
       <div class="example">
